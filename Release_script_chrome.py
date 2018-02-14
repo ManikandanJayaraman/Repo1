@@ -12,7 +12,7 @@ class Releaseversion (object):
     driver = webdriver.Chrome()
     driver.get("https://acsjira-qa.honeywell.com/projects/JUEX?selectedItem=com.honeywell.softco.jira.plugin.jira-extensions-contour-integration:versions-projectpanel")
     element = driver.find_element_by_xpath("//INPUT[@id='login-form-username']").send_keys("e483203");
-    element = driver.find_element_by_xpath("//INPUT[@id='login-form-password']/self::INPUT").send_keys("OM5ganesh5$");
+    element = driver.find_element_by_xpath("//INPUT[@id='login-form-password']/self::INPUT").send_keys("");
     element = driver.find_element_by_xpath("//INPUT[@id='login-form-submit']").click();
     element = driver.find_element_by_xpath("//BUTTON[@class='aui-button aui-button-subtle']/self::BUTTON").click()
     print ("open version settings")
